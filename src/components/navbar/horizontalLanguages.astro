@@ -1,0 +1,34 @@
+<div class="dropdown dropdown-end dropdown-hover items-center">
+  <label
+    tabindex="0"
+    class="enfoco btn btn-link decoration-transparent btn-group-horizontal text-base-content"
+  >
+    Idiomas</label
+  >
+  <ul
+    tabindex="0"
+    class="menu menu-sm dropdown-content z-[1] shadow bg-base-100 rounded-box w-36 items-end"
+  >
+    <li class="w-full">
+      <button class="language justify-end" name="espaniol">
+        Español<img src="/webapp/spain.png" alt="bandera de españa" />
+      </button>
+    </li>
+    <li class="w-full">
+      <button class="language justify-end" name="portugues">
+        Portugues<img src="/webapp/portugal.png" alt="bandera de portugal" />
+      </button>
+    </li>
+    <!-- <li class="w-full"><button class="language justify-end" name="ingles">Ingles</button></li> -->
+  </ul>
+</div>
+
+<style>
+  .enfoco:focus,
+  .enfoco:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px; /* Ajusta este valor según tu preferencia */
+    text-decoration-skip-ink: none;
+  }
+</style>

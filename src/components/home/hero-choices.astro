@@ -1,0 +1,39 @@
+---
+import Button from '../button.astro'
+const title = 'Residencias Médicas'
+const description =
+  ' Aquí vas a encontrar preguntas tipo Multiple Choices de Argentina, España, México y Perú.' +
+  ' Somos médicos que realizaron una residencia médica y nuestra mision es ayudarte a convertirte en médico residente.' +
+  ' Practica y consúltanos ante cualquier duda. ';
+const image = '/choices/choices-grande.png'
+const button1 = 'Acerca de Nosotros'
+const link1 = '/choices/nosotros'
+const button2 = 'Exámenes'
+const link2 = '/choices/examenes'
+---
+
+<div class="hero bg-base-400">
+  <div class="hero-content flex-col-reverse xl:flex-row-reverse">
+    
+    <img src={image} class="md:block md:rounded-[2rem] hidden w-[0%] md:w-[20rem] lg:w-[25rem] md:shadow-lg" />
+    <div class="w-full">
+      <h1 class="text-6xl font-bold" style="text-wrap: balance">
+        {title}
+      </h1>
+      <div class="flex flex-row">
+        <div class="flex-1 flex-grow-[2]">
+          <h3
+            class="text-xl text-slate-600 items-start"
+            style="text-wrap: balance"
+          >
+            {description}
+          </h3>
+          <!-- <h4 class="flex justify-start pt-4  text-slate-500">{signature}</h4> -->
+        </div>
+        <div class="flex-grow-[1] xl:flex-grow-[0]"></div>
+      </div>
+      <Button notPrimary big outline to={link1}>{button1}</Button>
+      <!-- <Button big to={link2}>{button2}</Button> -->
+    </div>
+  </div>
+</div>

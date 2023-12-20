@@ -1,0 +1,27 @@
+<style>
+  .enfoco:focus,
+  .enfoco:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px; /* Ajusta este valor según tu preferencia */
+    text-decoration-skip-ink: none;
+  }
+</style>
+
+<div class="dropdown dropdown-end dropdown-hover items-center">
+  <label
+    tabindex="0"
+    class="enfoco btn btn-link decoration-transparent btn-group-horizontal text-base-content"
+  >
+    Themes</label
+  >
+  <ul
+    class="menu menu-sm dropdown-content z-[1] pt-2 shadow bg-base-100 rounded-box w-auto items-end"
+  >
+    <li class="w-full"><button class="theme justify-end" name="dark">Oscuro</button></li>
+    <li class="w-full"><button class="theme justify-end" name="light">Claro</button></li>
+    <li class="w-full"><button class="theme justify-end" name="cupcake">Cupcake</button></li>
+    <li class="w-full"><button class="theme justify-end" name="cyberpunk">Cyberpunk</button></li>
+    <li class="w-full"><button class="theme justify-end" name="valentine">Valentine</button></li>    
+  </ul>
+</div>

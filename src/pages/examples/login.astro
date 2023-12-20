@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/PrismLayout.astro'
+import { GradientTitle } from '../../components/gradientTitle'
+import { LoginJSX } from '../../components/login/login'
+---
+
+<BaseLayout title="Webapp" max="max-w-[73rem]">
+  <div class="text-center">
+    <GradientTitle client:only withColor={'Login Test'} withoutColor={''} />
+    <LoginJSX client:only />
+  </div>
+</BaseLayout>

@@ -1,0 +1,29 @@
+<style>
+    .enfoco:focus,
+    .enfoco:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px; /* Ajusta este valor según tu preferencia */
+      text-decoration-skip-ink: none;
+    }
+  </style>
+  
+  <div class="dropdown dropdown-end dropdown-hover items-center">
+    <label
+      tabindex="0"
+      class="enfoco btn btn-link decoration-transparent btn-group-horizontal text-base-content"
+    >
+      Fonts</label
+    >
+    <ul
+      class="menu menu-sm dropdown-content z-[1] pt-2 shadow bg-base-100 rounded-box w-auto items-end"
+    >
+      <li class="w-full"><button class="font justify-end" name="font-sans">Sans</button></li>
+      <li class="w-full"><button class="font justify-end" name="font-serif">Serif</button></li>
+      <li class="w-full"><button class="font justify-end" name="font-mono">Mono</button></li>      
+      <li class="w-full"><button class="font justify-end" name="font-roboto">Roboto</button></li>      
+      <li class="w-full"><button class="font justify-end" name="font-lato">Lato</button></li>      
+      <li class="w-full"><button class="font justify-end" name="font-montserrat">Montserrat</button></li>      
+      <li class="w-full"><button class="font justify-end" name="font-open-sans">Open Sans</button></li>      
+    </ul>
+  </div>

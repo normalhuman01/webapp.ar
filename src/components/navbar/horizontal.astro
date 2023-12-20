@@ -1,0 +1,17 @@
+---
+import Themes from './horizontalThemes.astro'
+import Languages from './horizontalLanguages.astro'
+import Fonts from './horizontalFonts.astro'
+import Auth from './horizontalAuth.astro'
+
+const { idiomas, auth = false } = Astro.props
+---
+
+<div class="navbar-end hidden lg:flex pr-8">
+  <div class="menu menu-horizontal gap-1 flex-nowrap">
+    <Themes />
+    {idiomas && <Languages />}
+    <Fonts />
+    {auth && <Auth />}
+  </div>
+</div>
